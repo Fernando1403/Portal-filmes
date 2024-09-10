@@ -25,11 +25,11 @@ import PageNotFound from './pages/PageNotFound.jsx'
       element: <App/>,
       children: [
         {index: true, element: <Home />},
-        {path: 'movie', element: <MovieListPage />},
-        {path: 'movieDetail', element: <MovieDetailPage />},
-        {path: 'genreListPage', element: <GenreListPage />},
-        {path: 'movieByGenrePage', element: <MovieByGenrePage />},
-        {path: 'pageNotFound', element: <PageNotFound />}
+        {path: 'movies', element: <MovieListPage />},
+        {path: 'movies/:id', element: <MovieDetailPage />},
+        {path: 'genre', element: <GenreListPage />},
+        {path: 'genre/:id', element: <MovieByGenrePage />},
+        {path: '*', element: <PageNotFound />}
       ]
     }
 ])
