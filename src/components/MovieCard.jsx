@@ -1,8 +1,14 @@
-export default function MovieCard() {
+import { Link } from "react-router-dom";
+
+export default function MovieCard({titulo, id ,imagem_destaque}) {
+
     return(
         <>
-        <h1>Movie Card</h1>
-        {/* Modelo de card que será utilizado para os filmes */}
+        <div>
+            <h1>{titulo}</h1>
+            <img src={`/${imagem_destaque}`} alt="" />
+            <Link to={`movies/${id}`}>Ver Detalhes</Link>
+        </div>
         </>
     )
 
