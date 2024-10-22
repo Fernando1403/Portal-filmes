@@ -1,30 +1,31 @@
-import { NavLink } from "react-router-dom";
-import Login from "./LOgin";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Login from "./Login";
 
-export default function Header(){
+export default function Header() {
 
-    const [isLoggged, setIsLogged] = useState(false)
+    const [isLogged, setIsLogged] = useState(false)
 
     const handleLogin = () => {
-        setIsLogged(!isLoggged)
+        setIsLogged(!isLogged)
     }
 
-    return(
+    return (
         <>
-            <header className="py-5 flex w-full h-14 justify-around items-center bg-red-700 text-white font-semibold">
+            <header className="bg-red-800 flex text-white justify-around h-14 items-center">
                 <div>
-                    <h1>Portal Filmes</h1>
+                    <h1 className="font-bold">Portal Filmes</h1>
                 </div>
                 <nav>
-                    <ul className="flex gap-5">
-                        <li><NavLink to='/'>Home</NavLink></li>
-                        <li><NavLink to='/movies'>Filmes</NavLink></li>
-                        <li><NavLink to='/genre'>Gêneros</NavLink></li>
-                        {isLoggged && <li><NavLink to='/settings'>Configurações</NavLink></li>}
+                    <ul className="flex gap-4">
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/movies">Filmes</NavLink></li>
+                        <li><NavLink to="/genre">Gêneros</NavLink></li>
+                        <li><NavLink to="/contato">Contato</NavLink></li>
+                        {isLogged && <li><NavLink to="/settings">Configurações</NavLink></li>}
                     </ul>
                 </nav>
-                <Login isLoggged={isLoggged} handleLogin={handleLogin}/>
+                <Login isLogged={isLogged} handleLogin={handleLogin} />
             </header>
         </>
     )
