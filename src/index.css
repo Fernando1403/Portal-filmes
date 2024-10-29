@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-  border-bottom: 2px solid white;
+:root {
+  --color-blue-900: #15273c;
+  --color-blue-700: #235380;
+  --color-blue-500: #3b83bc;
+  --color-blue-300: #97c0e2;
+  --color-blue-100: #e6eff8;
+  --color-light: #f3f7fc;
+}
+
+.active {
+  border-bottom: 1.5px solid var(--color-light);
 }
