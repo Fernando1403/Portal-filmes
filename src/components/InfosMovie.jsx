@@ -90,13 +90,13 @@ export default function InfosMovie({ movie }) {
               <BtnAdicionar
                 funcao={() => filmesFavoritos(movie)}
                 color={"red-800"}
-                label={"Remover Favoritos:"}
+                label={"Remover Assistidos:"}
               />
             ) : (
               <BtnAdicionar
                 funcao={() => filmesFavoritos(movie)}
                 color={"zinc-400"}
-                label={"Adicionar Favoritos:"}
+                label={"Adicionar Assistidos:"}
               />
             )}
 
@@ -104,13 +104,13 @@ export default function InfosMovie({ movie }) {
               <BtnAdicionar
                 funcao={() => filmesAssistir(movie)}
                 color={"red-800"}
-                label={"Remover Assistidos:"}
+                label={"Remover Quero Assistir:"}
               />
             ) : (
               <BtnAdicionar
                 funcao={() => filmesAssistir(movie)}
                 color={"zinc-400"}
-                label={"Adicionar Assistidos:"}
+                label={"Adicionar Quero Assistir:"}
               />
             )}
           </div>

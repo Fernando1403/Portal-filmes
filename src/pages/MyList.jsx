@@ -22,7 +22,7 @@ export default function MyList() {
         <>
             <div className="px-10">
                 <div>
-                    <CardContainer label={"Filmes Favoritos:"}>
+                    <CardContainer label={"Filmes Assistidos:"}>
                         {filmesAssistido && filmesAssistido.length > 0 ?
                             <Carrosel movies={filmesAssistido} /> :
                             <p>Voce nao possui nenhum filme em sua lista</p>
