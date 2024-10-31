@@ -6,7 +6,7 @@ export default function MovieCard({ title, poster_path, id }) {
       <Link
         to={`/movies/${id}`}
         className="flex flex-col items-center justify-center text-center transition duration-300 ease-in-out hover:scale-105"
-      >
+      >     
         <img
           className="rounded-md object-cover"
           src={`http://image.tmdb.org/t/p/w500${poster_path}`}

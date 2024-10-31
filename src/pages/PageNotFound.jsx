@@ -2,8 +2,8 @@ import imgError from '../assets/404error.svg'
 
 function PageNotFound() {
   return (
-    <div className='h-svh flex justify-center items-center bg-red-800'>
-      <h1 className='text-white font-bold'>Page Not Found - 404</h1>
+    <div className='min-h-scren flex justify-center items-center bg-red-800'>
+      <h1 className='h-svh flex text-center items-center font-bold text-white'>Page not Found - 404</h1>
     </div>
   );
 }
